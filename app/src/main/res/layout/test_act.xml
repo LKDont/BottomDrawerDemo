@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lkdont.widget.BottomDrawerContainer xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".TestAct">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.lkdont.widget.DrawerShadow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.lkdont.widget.BottomDrawer
+        android:id="@+id/bottomDrawer"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="@color/white">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.lkdont.widget.BottomDrawer>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onToggleClick"
+        android:text="toggle" />
+
+</com.lkdont.widget.BottomDrawerContainer>
